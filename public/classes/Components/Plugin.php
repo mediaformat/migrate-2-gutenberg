@@ -17,7 +17,9 @@ abstract class Plugin {
 	 * @var ReflectionClass
 	 */
 	private $ref;
-
+	private $path;
+	private $url;
+	private $basename;
 	private $tooLateForTextdomain;
 
 	/**

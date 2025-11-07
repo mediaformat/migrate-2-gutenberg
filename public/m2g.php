@@ -30,6 +30,11 @@ require_once dirname( __FILE__ ) . "/vendor/autoload.php";
  * @property Actions actions
  */
 class Plugin extends Components\Plugin {
+	public $menu;
+	public $ajax;
+	public $actions;
+	public $dbMigrations;
+	public $migrationController;
 
 	const DOMAIN = "m2g";
 

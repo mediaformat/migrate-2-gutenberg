@@ -12,6 +12,7 @@ namespace Palasthotel\WordPress\MigrateToGutenberg\Components;
  * @version 0.1.2
  */
 abstract class Component {
+	public $plugin;
 	/**
 	 * _Component constructor.
 	 *
