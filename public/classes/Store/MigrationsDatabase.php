@@ -9,6 +9,7 @@ use Palasthotel\WordPress\MigrateToGutenberg\Components\Database;
  * @property string table
  */
 class MigrationsDatabase extends Database {
+	public $table;
 
 	function init() {
 		$this->table = $this->wpdb->prefix."m2g_migrations";

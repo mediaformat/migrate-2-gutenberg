@@ -8,6 +8,8 @@ namespace Palasthotel\WordPress\MigrateToGutenberg;
  * @property Plugin plugin
  */
 class CommandLine {
+	public $plugin;
+
 	public function __construct( Plugin $plugin ) {
 		$this->plugin = $plugin;
 	}

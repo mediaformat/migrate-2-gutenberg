@@ -14,6 +14,8 @@ use Palasthotel\WordPress\MigrateToGutenberg\Views\PostMigrationsTable;
  * @property PostMigrationPreview preview
  */
 class Menu extends Component {
+	private $diff;
+	private $preview;
 
 	const SLUG = "m2g";
 
@@ -100,7 +102,7 @@ class Menu extends Component {
         $table      = new PostMigrationsTable( $migrations );
         $table->prepare_items();
         $table->views();
-		//$table->search_box("Search", "search");
+		// $table->search_box("Search", "search");
         $table->display();
 
         ?>
